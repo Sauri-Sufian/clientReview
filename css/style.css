@@ -25,7 +25,9 @@ header button{
     height: 1.7rem;
     border-radius: 3px;
     margin-right: .5rem;
+    color: white;
     background-color: rgba(156, 64, 241, 0.849);
+    box-shadow: 0px 5px 5px #777;
 }
 .main{
     margin-top: 1.1rem;
@@ -36,7 +38,7 @@ header button{
     border-radius: 5px;
     background-color: #FF023E;
     width: 60%;
-    box-shadow: 5px 5px 7px #777;
+    box-shadow: 0px 5px 15px #777;
 }
 .title{
     font-size:2.3rem ;
@@ -61,11 +63,14 @@ header button{
     font-size:1.3rem ;
 }
 #content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 65%;
     background-color: white;
     padding: 1.3rem;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
 }
 .triangle{
     width: 0;
@@ -75,26 +80,65 @@ header button{
 	border-bottom: 3em solid transparent;
 }
 
-
 .button-house{
     margin-top: 1.3rem;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.3rem;
+    
 }
 
 .button-house button{
+   
     border: none;
     outline: none;
     cursor: pointer;
     margin-left: .7rem;
     margin-right: .7rem;
-    width: 5rem;
+    width: 3.4rem;
+    height: 5.5vh;
+    
+    border-radius: 100%;
+    text-transform: capitalize;
+    background-color: white;
+    color: #FF023E;
+    font-size: 1.7rem;
+  
+    
+}
+.button-house button:hover{
+    color: white;
+    background-color: #eca92d;
+ 
+}
+.submit-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#submit-btn{
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: .7rem;
+    margin-right: .7rem;
+    width: 5.4rem;
     height: 3.5vh;
     border-radius: 5px;
-    text-transform: capitalize;
+    background-color:rgba(156, 64, 241, 0.849) ;
+    box-shadow: 0px 5px 5px #777;
+    transition: .3s;
+}
+#submit-btn:hover{
+    transform: scale(1.2);
 }
 
+#txt-area{
+    margin-left: 1.5rem;
+}
  @media(max-width:885px){
     .triangle{
         width: 0;
@@ -113,16 +157,6 @@ header button{
         border-bottom: 3em solid transparent;
     }
 }
-/*
-@media(max-width:900px){
-    .triangle{
-        width: 0;
-        height: 0;
-        border-right: 4rem solid white;
-        border-left: 2.8rem solid transparent;
-        border-bottom: 3rem solid transparent;
-    }
-} */
 
 #backdrop.visible{
     display: block;
@@ -147,19 +181,69 @@ header button{
     position: fixed;
     z-index: 100;
     width: 80%;
-     height: 30vh; 
+     height: 40vh; 
     background-color: white;
     top: 30vh;
     left:10% ;
+    border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     display: none;
+    
 }
 
 .modal.visible{
-    display: block;
+    display: flex;
+    justify-content: center;
     animation: fade-slide-in 0.3s ease-out forwards;
 }
+.modal-content{
+    margin-top: .5rem;
+    margin-left: .5rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+label{
+    margin: 0;
+    font-size: 1rem;
+}
+.modal__styler{
+    display: flex;
+    justify-content: center;
+}
+.modal-content input{
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.modal-content input.active{
+    border-bottom: 1px solid rgba(240, 29, 229, 0.781);
+}
+.score-area{
+    display: flex;
+    margin-left: 1rem;
 
+}
+.score-area ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+.score-area li{
+    margin: 0;
+
+}
+input{
+    
+    margin-left: .7rem;
+}
+i{
+    color: rgba(143, 133, 133, 0.514);
+}
+.pos{
+    color: white;
+}
 @keyframes fade-slide-in {
     from {
       transform: translateY(-5rem);
@@ -168,4 +252,3 @@ header button{
       transform: translateY(0);
     }
   }
-  

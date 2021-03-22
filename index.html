@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
- 
     <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
@@ -20,21 +20,24 @@
     <main>
         <div id="backdrop" ></div>
         <div class="modal " >
-            <div>
+            <div class="modal-content">
+                <div class="modal__styler">
                 <label for="">Name</label>
-                <input type="text" name="" id="">
-                <label for="">Score</label>
-                <div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                <input type="text" name="" id="name-input">
+                <div class="score-area">
+                    <label for="">Score</label>
+                    
+                    <input type="text" name="" id="score-input">
                 </div>
+            </div> 
+            <div style="display: flex;justify-content: center; margin-top: 2rem;width: 90%;">
                 <label for="text">Review</label>
-                <input type="text" name="" id="">
+                
+                <textarea name="" id="txt-area" cols="50" rows="10"></textarea>
+            </div>
+                <div class="submit-btn-container">
+                    <button id="submit-btn">Submit</button>
+                </div>
             </div>
         </div>
         <div class="main">
@@ -54,19 +57,30 @@
                        <h5 id="user-name" >name</h5>
                        <span  id="info" ></span>
                    </div>
-                </div>
-                <div id="content">
-                  
-                </div>
+                   
+                   <div id="score-review" class="icon-invisible" style="font-size: .8rem; cursor: pointer;" >
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                   </div>
+                
             </div>
-            <div class="button-house">
-                <div><button id="prev-btn" >prev</button></div>
-                <div><button id="next-btn" >next</button></div>
+            <div id="content">
+                
             </div>
         </div>
+        <div class="button-house">
+            <div><button id="prev-btn" class="btn prev-cont" > <span><</span> </button></div>
+            <div><button id="next-btn" class="btn next-cont" > <span>></span> </button></div>
+        </div>
     </div>
-    
-    </main>
+</div>
+
+
+</main>
+
  
 </body>
 </html>
