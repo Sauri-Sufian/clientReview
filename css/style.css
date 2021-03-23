@@ -139,25 +139,7 @@ header button{
 #txt-area{
     margin-left: 1.5rem;
 }
- @media(max-width:885px){
-    .triangle{
-        width: 0;
-        height: 0;
-        border-right: 8em solid white;
-        border-left: .2em solid transparent;
-        border-bottom: 3em solid transparent;
-    }
-}
-@media(max-width:250px){
-    .triangle{
-        width: 0;
-        height: 0;
-        border-right: 2em solid white;
-        border-left: .2em solid transparent;
-        border-bottom: 3em solid transparent;
-    }
-}
-
+ 
 #backdrop.visible{
     display: block;
     pointer-events: all;
@@ -252,3 +234,57 @@ i{
       transform: translateY(0);
     }
   }
+@media(max-width:600px){
+    .main-container{
+        width: 80%;
+    }
+    .modal-content{
+        width: 50%;
+    }
+    #score-review i{
+        font-size: .5rem;
+    }
+}
+
+  @media(max-width:885px){
+    .triangle{
+        width: 0;
+        height: 0;
+        border-right: 8em solid white;
+        border-left: .2em solid transparent;
+        border-bottom: 3em solid transparent;
+    }
+    .title{
+        font-size: 1.1rem;
+    }
+    #content{
+        font-size: .7rem;
+    }
+    #user-name{
+        font-size: .7rem;
+    }
+}
+@media(max-width:380px){
+    #score-review i{
+        font-size: .3rem;
+    }
+    .button-house button{
+        width: 2rem;
+        height: 2.5vh;
+    
+    border-radius:50% ;
+    text-transform: capitalize;
+    background-color: white;
+    color: #FF023E;
+    font-size: 1rem;
+    }
+}
+@media(max-width:300px){
+    .triangle{
+        width: 0;
+        height: 0;
+        border-right: 3em solid white;
+        border-left: .2em solid transparent;
+        border-bottom: 3em solid transparent;
+    }
+}

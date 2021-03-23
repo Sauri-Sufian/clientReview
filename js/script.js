@@ -27,7 +27,7 @@ let userData=
     name:"Alfred Hitchcock",
     imgUrl:`https://robohash.org/${userID}?set=set4`,
     score:"4",
-    text:" There's a scene in Hitchcock, the biography starring Anthony Hopkins, where Alfred Hitchcock stands outside a packed theater as an audience watches Psycho for the first time. And when the infamous shower scene unfolds and the cacophony of screams erupts, Hitchcock emphatically waves his arms back and forth like an orchestral conductor."
+    text:" There's a scene in Hitchcock, the biography starring Anthony Hopkins, where Alfred Hitchcock stands outside a packed theater as an audience watches Psycho for the first time. And when the infamous shower scene unfolds "
 
     },
     {   
@@ -35,7 +35,7 @@ let userData=
         name:"Akira Kurosawa",
         imgUrl:`https://robohash.org/${userID}?set=set4`,
         score:"3",
-        text:" You don't have to understand Japanese culture or be a scholar of the country's Sengoku period to appreciate what Akira Kurosawa's work means. The point is Kurosawa took stories that are extremely specific and made them globally relevant. His stories took common themes from his own culture but also Shakespeare and found a message that resonated around the world."
+        text:" You don't have to understand Japanese culture or be a scholar of the country's Sengoku period to appreciate what Akira Kurosawa's work means. The point is Kurosawa took stories that are extremely specific and "
     
     },
     {   
