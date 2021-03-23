@@ -138,6 +138,7 @@ header button{
 
 #txt-area{
     margin-left: 1.5rem;
+    height: 3rem;
 }
  
 #backdrop.visible{
@@ -239,11 +240,20 @@ i{
         width: 80%;
     }
     .modal-content{
-        width: 50%;
+        width: 100%;
+    }
+    .modal__styler{
+        width: 100%;
+        display: inline-block;
     }
     #score-review i{
         font-size: .5rem;
     }
+    #txt-area{
+        width: 80%;
+        height: 4rem;
+    }
+
 }
 
   @media(max-width:885px){
